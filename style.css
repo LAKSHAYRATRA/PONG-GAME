@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(31, 21, 21);
+}
+.container{
+    position: relative;
+    height: 99vh;
+    width: 99.9vw;
+    border: 1vh solid white;
+    perspective: 1;
+    z-index: 0;
+    overflow: hidden;
+}
+.nav{
+    height: 8vh;
+    border: 0.5vh solid white;
+}
+#game_heading{
+    color:transparent;
+    background-image: linear-gradient(red,green,blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: background_change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes background_change {
+    0%{
+        background-image: linear-gradient(rgb(229, 63, 63),green,blue);
+    }
+    25%{
+        background-image: linear-gradient(rgb(108, 230, 77),rgb(61, 232, 195),rgb(40, 199, 239));
+    }
+    50%{
+        background-image: linear-gradient(rgb(225, 238, 131),rgb(111, 229, 82),rgb(104, 229, 233));
+    }
+    75%{
+        background-image: linear-gradient(rgb(251, 128, 229),rgb(151, 74, 233),rgb(119, 90, 234));
+    }
+    100%{
+        background-image: linear-gradient(rgb(244, 83, 134),rgb(215, 88, 88),rgb(190, 67, 182));
+    }
+    
+}
+.separation{
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    height: 4vh;
+    width: 2vh;
+    background-color: white;
+}
+.left_bar{
+    position: absolute;
+    left: 0vw;
+    top: 8vh;
+    height: 8vw;
+    width: 1vw;
+    background-color:rgb(35, 213, 225);
+}
+.right_bar{
+    position: absolute;
+    right: 0vw;
+    top: 8vh;
+    height: 8vw;
+    width: 1vw;
+    background-color: rgb(35, 213, 225);
+}
+.ball{
+    position: absolute;
+    top: 20vh;
+    left: 23vh;
+    height: 3vh;
+    width: 3vh;
+    background-color: white;
+    
+}
+.bottom_boundary{
+    position: absolute;
+    bottom: 0vh;
+    width: 100vw;
+    height: 0.1vh;
+    background-color: white;
+}
+.top_boundary{
+    position: absolute;
+    top: 8.1vh;
+    width: 100vw;
+    height: 0.1vh;
+    background-color: white;
+}
+.left_boundary{
+    position: absolute;
+    left: 0vh;
+    width: 0.1vw;
+    height: 100vh;
+    background-color: white;
+}
+.right_boundary{
+    position: absolute;
+    right: 0vh;
+    width: 0.1vw;
+    height: 100vh;
+    background-color: white;
+}
+.flex{
+    background-color: aquamarine;
+    color: rgb(26, 121, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.scorer{
+    color: white;
+}
